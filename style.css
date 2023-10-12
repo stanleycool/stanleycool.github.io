@@ -1,0 +1,26 @@
+html {
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#hiy{
+    margin: 25px;
+    background-color: red;
+    border-radius: 55px;
+    width: fit-content;
+
+
+}
+
+.divmg {
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    margin: 10px;
+}
