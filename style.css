@@ -14,8 +14,7 @@ body {
     background-color: red;
     border-radius: 55px;
     width: fit-content;
-
-
+    margin: 25px auto 25px auto;
 }
 
 .divmg {
