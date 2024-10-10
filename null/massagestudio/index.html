@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Massage Studio</title>
+    <link rel="icon" type="image/png" href="files/favicon.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/main.js"></script>
+    <script src="/files/templates.js"></script>
+
+    <script>
+        document.head.appendChild(_TEMPLATEfonts.content);
+    </script>
+
+</head>
+<body>
+    <div id="titlebarbg">
+        <div id="titlebar">
+            <div id="titlenav">
+                <a href="info" class="navbari" id="navbarinfo">INFO</a>
+                <a href="sluzby" class="navbari" id="navbarsluzby">SLU&Zcaron;BY</a>
+                <a href="galeria" class="navbari" id="navbargaleria">GAL&Eacute;RIA</a>
+                <a href="kontakt" class="navbari" id="navbarkontakt">KONTAKT</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.appendChild(_TEMPLATEheader.content);
+        document.getElementById("navbarinfo").style.marginLeft = "1vh";
+        let x = document.querySelector("header");
+        x.style.position = "fixed";
+        x.style.top = "-9vh";
+        window.onscroll = () => {
+            if (window.scrollY > (document.getElementById("titlebarbg").clientHeight - 50)) {
+                x.style.top = "0";
+            } else {
+                x.style.top = "-9vh";
+            }
+        }
+    </script>
+    <section id="info">
+        <div class="grid2 a" style="grid-template-columns: 2fr 3fr; background: #FFC99C">
+            <img src="https://thumbs.dreamstime.com/b/young-man-getting-massage-10545600.jpg" />
+            <div>
+                <h1>Info</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button onclick="document.location.href = 'info';">&Ccaron;&iacute;taj Viac</button>
+            </div>
+        </div>
+    </section>
+    <section id="sluzby">
+        <div class="flex col a" style="background: #CDBBA9">
+            <h1>Ob&lcaron;&uacute;ben&eacute; Slu&zcaron;by:</h1>
+            <br />
+            <div id="sluzbyscroller" class="flex">
+                Tu bude scroller s vybranymi sluzbami.
+            </div><br /><br />
+            <button onclick="document.location.href = 'sluzby';">V&scaron;etky Slu&zcaron;by</button>
+        </div>
+    </section>
+    <section id="sluzby">
+        <div class="flex col a">
+            <h1>Novinky:</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div><br />
+    </section>
+
+    <footer>
+        <p>&copy; 2024 <b>Massage Studio</b></p>
+        <p>&lt;Soci&aacute;lne Ikonky?&gt;</p>
+        <p style="user-select: all;"><b>+421 123 456 789</b></p>
+    </footer>
+
+</body>
+</html>
