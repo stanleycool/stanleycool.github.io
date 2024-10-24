@@ -8,7 +8,7 @@
 <body>
     <h1>Hello World!</h1>
     <p>I heard it's your birthday! And even if it's not, have a cake!</p>
-    <button style="padding: 10px 20px 5px 20px;" onclick="youtube()">Visit my YouTube Channel</button>
+    <button style="padding: 10px 20px 5px 20px;" onclick="youtube()">Check out my socials!</button>
     <br />
 
     <div class="flex">
@@ -28,7 +28,13 @@
 
 
     <div id="youtube">
-        <iframe src="https://www.youtube.com/embed/9PInWoimOR8?si=jDcqP0__I9MTAk4R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="grid">
+            <button class="hello" onclick="document.location.href='https://youtube.com/@kingpvz'">YouTube</button>
+            <button class="hello" onclick="document.location.href='https://youtube.com/@kingpvz'">Instagram</button>
+            <button class="hello" onclick="document.location.href='https://youtube.com/@kingpvz'">GitHub</button>
+            <button class="hello" onclick="document.location.href='https://youtube.com/@kingpvz'">Discord</button>
+        </div>
+        <h1 onclick="closeYoutube()" style="margin-left: 150px; cursor:pointer; color: red; text-shadow: yellow 0 0 5px; font-weight: 900">X</h1>
     </div>
 </body>
 </html>

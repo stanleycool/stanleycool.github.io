@@ -17,3 +17,8 @@ function youtube() {
     let yt = document.getElementById("youtube");
     yt.style.display = "flex";
 }
+
+function closeYoutube() {
+    let yt = document.getElementById("youtube");
+    yt.style.display = "none";
+}
