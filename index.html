@@ -3,14 +3,32 @@
 <head>
     <title>A very cool website</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>Hello World!</h1>
     <p>I heard it's your birthday! And even if it's not, have a cake!</p>
-    <a href="https://youtube.com/@kingpvz"><button style="padding: 10px 20px 5px 20px;">Visit my YouTube Channel</button></a><br />
+    <button style="padding: 10px 20px 5px 20px;" onclick="youtube()">Visit my YouTube Channel</button>
+    <br />
 
+    <div class="flex">
         <div id="hiy">
-            <a href="acake"><img src="https://www.onlinedelivery.in/images/detailed/29/8492.jpg" class="divmg" /></a>
-            <img src="https://www.onlinedelivery.in/images/detailed/29/8492.jpg" class="divmg" />
+            <img src="https://www.onlinedelivery.in/images/detailed/29/8492.jpg" class="divmg" onclick="document.location.href='acake.html'" style="cursor: pointer" />
+            <img src="https://www.onlinedelivery.in/images/detailed/29/8492.jpg" class="divmg" id="hello" />
         </div>
+    </div>
+
+    <button class="hello" onclick="makeVisible()">Hide/Show</button>
+
+
+
+
+
+
+
+
+    <div id="youtube">
+        <iframe src="https://www.youtube.com/embed/9PInWoimOR8?si=jDcqP0__I9MTAk4R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
 </html>
